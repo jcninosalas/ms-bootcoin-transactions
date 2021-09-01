@@ -12,6 +12,9 @@ import java.util.Date;
 @Builder
 public class Transaction {
     private BigDecimal ammount;
+    private String buyersPhoneNumber;
+    private String sellersPhoneNumber;
     private Date createdAt;
     private TransactionType transactionType;
+    private PaymentMethod paymentMethod;
 }

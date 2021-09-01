@@ -12,8 +12,7 @@ import java.sql.Date;
 import java.time.Instant;
 
 /*
-Aqui se consume el evento publicado por el ms de creacion de cuentas
-asi al crear una cuenta un registro de transacciones es creado tambien
+Al crear un monedero/cuenta un registro de transacciones es creado tambien
  */
 @Component
 @Slf4j

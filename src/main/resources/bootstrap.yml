@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ms-bootcoin-accounts
+  cloud:
+    stream:
+      function:
+        definition: yankiPaymentEventPublisher;accountCreatedEventConsumer
+      bindings:
+        yankiPaymentEventPublisher-out-0:
+          destination: yankipayments #topico en kafka
+        accountCreatedEventConsumer-in-0:
+          destinations: bootcoinaccounts #topico en kafka
+    config:
+      uri: https://ms-config-server.azurewebsites.net
